@@ -1,0 +1,189 @@
+// This configuration is merged with the default vicinae configuration file, which you can obtain by running the `vicinae config default` command.
+// Every item defined in this file takes precedence over the values defined in the default config or any other imported file.
+//
+// You can make manual edits to this file, however you should keep in mind that this file may be written to by vicinae when a configuration change is made through the GUI.
+// When that happens, any custom comments or formatting will be lost.
+//
+// If you want to maintain a configuration file with your own comments and formatting, you should create a separate file and add it to the 'imports' array.
+//
+// Learn more about configuration at https://docs.vicinae.com/config
+
+{
+   "$schema": "https://vicinae.com/schemas/config.json",
+   "font": {
+      "normal": {
+         "family": "SF Pro Display"
+      }
+   },
+   "theme": {
+      "dark": {
+         "name": "vicinae-dark",
+         "icon_theme": "WhiteSur-dark"
+      }
+   },
+   "launcher_window": {
+      "opacity": 0.5,
+      "client_side_decorations": {
+         "border_width": 2
+      }
+   },
+   "favorites": [
+      "files:search",
+      "clipboard:history"
+   ],
+   "providers": {
+      "@abielzulio/store.raycast.chatgpt": {
+         "enabled": false,
+         "preferences": {
+            "isAutoFullInput": false,
+            "isAutoLoadText": false,
+            "isAutoSaveConversation": true,
+            "isAutoTTS": false,
+            "isCustomModel": false,
+            "isHistoryPaused": false,
+            "proxyProtocol": "http",
+            "useApiEndpoint": false,
+            "useAzure": false,
+            "useProxy": false,
+            "useStream": true,
+            "useVisionModel": false
+         },
+         "entrypoints": {
+            "ask-clipboard-image": {
+               "enabled": false
+            },
+            "ask-selected-image": {
+               "enabled": false
+            },
+            "create-ai-command": {
+               "enabled": false
+            },
+            "model": {
+               "enabled": false
+            },
+            "search-ai-command": {
+               "enabled": false
+            },
+            "summarize": {
+               "enabled": false
+            }
+         }
+      },
+      "@mmstroik/store.vicinae.kde-system-settings": {
+         "enabled": false
+      },
+      "@sovereign/store.vicinae.awww-switcher": {
+         "preferences": {
+            "wallpaperPath": "/home/mando/Pictures/wallpaper"
+         }
+      },
+      "@tonka3000/store.raycast.speedtest": {
+         "enabled": false
+      },
+      "core": {
+         "entrypoints": {
+            "about": {
+               "enabled": true
+            },
+            "documentation": {
+               "enabled": false
+            },
+            "forget-telemetry": {
+               "enabled": false
+            },
+            "manage-fallback": {
+               "enabled": false
+            },
+            "oauth-token-store": {
+               "enabled": false
+            },
+            "open-config-file": {
+               "enabled": false
+            },
+            "open-default-config": {
+               "enabled": false
+            },
+            "prune-memory": {
+               "enabled": false
+            },
+            "reload-scripts": {
+               "enabled": false
+            },
+            "report-bug": {
+               "enabled": false
+            },
+            "search-builtin-icons": {
+               "enabled": false
+            },
+            "search-emojis": {
+               "enabled": false
+            },
+            "sponsor": {
+               "enabled": false
+            }
+         }
+      },
+      "developer": {
+         "enabled": false
+      },
+      "font": {
+         "enabled": true
+      },
+      "power": {
+         "enabled": true,
+         "entrypoints": {
+            "hibernate": {
+               "enabled": false
+            },
+            "soft-reboot": {
+               "enabled": false
+            },
+            "suspend": {
+               "enabled": false
+            }
+         }
+      },
+      "system": {
+         "entrypoints": {
+            "browse-apps": {
+               "enabled": true
+            },
+            "toggle-mute": {
+               "enabled": false
+            },
+            "volume-0": {
+               "enabled": false
+            },
+            "volume-100": {
+               "enabled": false
+            },
+            "volume-25": {
+               "enabled": false
+            },
+            "volume-50": {
+               "enabled": false
+            },
+            "volume-75": {
+               "enabled": false
+            },
+            "volume-down": {
+               "enabled": false
+            },
+            "volume-up": {
+               "enabled": false
+            }
+         }
+      },
+      "theme": {
+         "enabled": false,
+         "entrypoints": {
+            "set": {
+               "enabled": true
+            }
+         }
+      },
+      "wm": {
+         "enabled": false
+      }
+   }
+}
