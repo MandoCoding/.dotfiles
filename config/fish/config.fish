@@ -95,33 +95,6 @@ function copy
     end
 end
 
-## Useful aliases
-# Replace ls with eza
-alias ls='eza -al --color=always --group-directories-first --icons' # preferred listing
-alias la='eza -a --color=always --group-directories-first --icons'  # all files and dirs
-alias ll='eza -l --color=always --group-directories-first --icons'  # long format
-alias lt='eza -aT --color=always --group-directories-first --icons' # tree listing
-alias l.="eza -a | grep -e '^\.'"                                     # show only dotfiles
-
-# Common use
-alias grubup="sudo grub-mkconfig -o /boot/grub/grub.cfg"
-alias tarnow='tar -acf '
-alias untar='tar -zxvf '
-alias wget='wget -c '
-alias psmem='ps auxf | sort -nr -k 4'
-alias psmem10='ps auxf | sort -nr -k 4 | head -10'
-alias cd='z'
-alias cat='bat'
-alias dir='dir --color=auto'
-alias vdir='vdir --color=auto'
-alias grep='grep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias egrep='egrep --color=auto'
-alias big="expac -H M '%m\t%n' | sort -h | nl"              # Sort installed packages according to size in MB
-alias ranger='yazi'
-# Get the error messages from journalctl
-alias jctl="journalctl -p 3 -xb"
-alias nix-rebuild="git add -A && sudo nixos-rebuild switch --flake ."
 # pnpm
 set -gx PNPM_HOME "/home/mando/.local/share/pnpm"
 if not string match -q -- $PNPM_HOME $PATH
@@ -137,3 +110,20 @@ function y
 	end
 	rm -f -- "$tmp"
 end
+
+# /===========================================================\
+
+# Replace ls with eza
+alias ls='eza -al --color=always --group-directories-first --icons' # preferred listing
+alias la='eza -a --color=always --group-directories-first --icons'  # all files and dirs
+alias ll='eza -l --color=always --group-directories-first --icons'  # long format
+alias lt='eza -aT --color=always --group-directories-first --icons' # tree listing
+alias l.="eza -a | grep -e '^\.'"                                     # show only dotfiles
+
+# Common use
+alias cd='z'
+alias cat='bat'
+alias ranger='yazi'
+alias stow-config='stow -d ~/.dotfiles/config -t ~/.config'
+
+# \===========================================================/
