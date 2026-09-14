@@ -1,6 +1,6 @@
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=30&pause=1000&color=FFFFFF&center=true&vCenter=true&width=1000&lines=Mando's+Dotfiles;A+Streamlined+UNIX+Environment)](https://git.io/typing-svg)
 
-## Hyprland and Shell
+## Hyprland Shell
 <p float="left">
   <img alt="" src=".readme/3.png" width="48%" />
   <img alt="" src=".readme/14.png" width="48%" />
@@ -31,17 +31,20 @@ Configs under `~/` including `.config` are stored in:
 `~/.dotfiles/`
 
 Example:
-`origin:  ~/.dotfiles/config/hypr/main.lua`
-`symlink: ~/.config/hypr/main.lua`
+```
+origin:  ~/.dotfiles/config/hypr/main.lua
+symlink: ~/.config/hypr/main.lua
+```
 
 Apply config:
-`cd ~/.dotfiles/config`
-`stow -n -v -d ~/.dotfiles -t ~/.config config` (dryrun)
-`stow -d ~/.dotfiles -t ~/.config config` (apply)
+```
+cd ~/.dotfiles/config
+stow -n -v -d ~/.dotfiles -t ~/.config config (dryrun)
+stow -d ~/.dotfiles -t ~/.config config (apply)
+```
 
 Remove config:
 `stow -D -t ~/.config */`
-
 Each top-level folder is a Stow package; Stow handles its contents recursively.
 
 ---
