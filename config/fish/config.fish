@@ -12,27 +12,6 @@ function fish_greeting
     fastfetch
 end
 
-## Neovim non-modal
-function nvim --wraps=nvim
-    set -l easy_mode 0
-    set -l args
-
-    for arg in $argv
-        if test "$arg" = "-ez"
-            set easy_mode 1
-        else
-            set -a args "$arg"
-        end
-    end
-
-    if test $easy_mode -eq 1
-        set -lx vim_ez 1
-        command "nvim" $args
-    else
-        command "nvim" $args
-    end
-end
-
 # Set Editor Prefrence
 set -gx EDITOR micro
 set -gx VISUAL micro

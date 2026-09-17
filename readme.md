@@ -1,7 +1,6 @@
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=30&pause=1000&color=FFFFFF&center=true&vCenter=true&width=1000&lines=Mando's+Dotfiles;A+Streamlined+UNIX+Environment)](https://git.io/typing-svg)
 
 ## Hyprland Shell
-<!--suppress CheckImageSize -->
 <p float="left">
   <img alt="" src=".readme/3.png" width="48%" />
   <img alt="" src=".readme/14.png" width="48%" />
@@ -24,7 +23,7 @@
 A Structured and Reproducible configuration using GNU Stow.
 This repository contains my production dotfiles,
 this collection is intentionally minimal, and is intended to be used with a nix-project.
-custom configurations are separated from the system's through the usage of symlinks.
+custom configurations are seperated from the system's through the useage of symlinks.
 current configurations follows the UNIX principle, though many tasks may later be handled by quickshell.
 
 ## GNU Stow commands 
@@ -40,8 +39,8 @@ symlink: ~/.config/hypr/main.lua
 Apply config:
 ```
 cd ~/.dotfiles/config
-stow -n -v -d ~/.dotfiles -t ~/.config config  #(dryrun)
-stow -d ~/.dotfiles -t ~/.config config #(apply)
+stow -n -v -d ~/.dotfiles -t ~/.config config (dryrun)
+stow -d ~/.dotfiles -t ~/.config config (apply)
 ```
 
 Remove config:
